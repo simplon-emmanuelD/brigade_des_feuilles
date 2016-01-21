@@ -1,21 +1,21 @@
 <?php
 	if (file_exists('cont_visite.txt')) {// si le ficher existe
 		$compteur_f = fopen('cont_visite.txt', 'r+');
-		// on l'ouvre en lecture seul
+		// on l'ouvre en lecture seule
 		$compte = fgets($compteur_f);
-		// on recupe le chifre du ficher dans une variable compte
-	} else {// si il existe pas
+		// on récupère le chiffre du ficher dans la variable compte
+	} else {// s'il n'existe pas
 		$compteur_f = fopen('cont_visite.txt', 'a+');
-		// on le cree
+		// on le créer
 		$compte = 0;
-		// on cree une variable compte
+		// on créer la variable compte
 	}
 	$compte++;
-	// on ajout 1 a la variable compte
+	// on ajoute 1 à la variable compte
 	fseek($compteur_f, 0);
-	// on suprime le contenus du ficher
+	// on supprime le contenu du ficher
 	fputs($compteur_f, $compte);
-	//pour le remplacer par le contenus de la variable compte
+	//pour le remplacer par le contenu de la variable compte
 	fclose($compteur_f);
 	// on ferme le ficher
 ?>
@@ -63,7 +63,7 @@
 									<!--navbar  -->
 									<div class="navbar-header">
 										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-											<span class="sr-only"> navigation</span>
+											<span class="sr-only"> Navigation</span>
 											<span class="icon-bar"></span>
 											<span class="icon-bar"></span>
 											<span class="icon-bar"></span>
@@ -72,20 +72,20 @@
 											<a href="#"><img src="img/logo.png" alt="logo"></a>
 										</div>
 									</div>
-									<!-- NAVIGATION ICI STOP LE CHERCHER !!!!!!!!!!! -->
+
 									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 										<ul class="nav navbar-nav">
 											<li id="accueil" class="active">
 												<a href="#">Accueil <span class="sr-only">(current)</span></a>
 											</li>
 											<li id="project">
-												<a href="#">Projects</a>
+												<a href="#">Présentation du projet</a>
 											</li>
 											<li id="galerie">
-												<a href="#">Statistique</a>
+												<a href="#">Statistiques</a>
 											</li>
 											<li id="evenement">
-												<a href="#">Evenement</a>
+												<a href="#">Evênement</a>
 											</li>
 										</ul>
 									</div><!-- /.navbar-collapse -->
@@ -98,10 +98,10 @@
 							<div class="contact-area">
 								<ul>
 									<li>
-										<i class="fa fa-phone-square"></i>04.68.44.34.22
+										<i class="fa fa-phone-square">04.68.44.34.22</i>
 									</li>
 									<li>
-										<i class="fa fa-envelope-o"></i>brigadedesfeuilles@gmail.com
+										<i class="fa fa-envelope-o">brigadedesfeuilles@gmail.com</i>
 									</li>
 								</ul>
 							</div>
@@ -121,18 +121,16 @@
 								<div class="slider-text-area">
 									<div class="slider-text">
 										<div class="col-xs-12 ">
-											<h2 style="text-align:center; margin-bottom:20px ">Le Tri selectif est notre avenir</h2>
+											<h2 style="text-align:center; margin-bottom:20px;">Le Tri sélectif est un geste d'avenir</h2>
 										</div>
 										<div id="headtext" class="col-md-6 col-xs-12">
 											<p class="sub-slider-text">
-												Pour un avenir meilleur
+												Pourquoi les résultats sont si mauvais ?
 											</p>
 											<p class="slider-p">
-												Trop peut de personne sont au courant des actions des mairie
+												Le manque d'informations et quelques fois d'intérêt, ajouté à de nombreuses contraintes techniques, participe grandement à ces mauvais résultats.
 												<br>
-												c'est pour cela que la brigade des feuilles intervient pour modifier les habitudes et améliorer le tri selectif
-												<br>
-												pour réduire les problemes d'éco systeme, application disponible
+												Conscient de ce problème et motivé par les enjeux, notre collectif "La Brigade des Feuilles" a mené une étude approfondie pour détecter les causes qui influent négativement sur la décision de trier ses déchets.
 											</p>
 										</div>
 										<!-- div col cx 6 -->
@@ -158,12 +156,12 @@
 							<div class="block-left">
 								<div class="contant-1-text-area">
 									<div class="contant-1-head">
-										<h1>Nos action dans Narbonne </h1>
+										<h1>Nos actions dans Narbonne </h1>
 									</div>
 									<div class="contant-1-text">
-										<h2>Evenement sur le tri selectif Concour désign.</h2>
+										<h2>Evênement sur le tri sélectif Concours désign.</h2>
 										<p>
-											Une apres-midi pour sensibiliser les personnes au tri. Avec plusieur concour pour customiser nos poubeills Qui peuve rendre plus attractif le tri selectif. Chaque personne et libre de proposer son graphisme qui trônera dans tous les foyers du grand Narbonne. Les bulletins de vote seront disponible chez tous les commercent du cœur de ville ainsi que les grande surface
+											Booster lien social et le porter vers de nouveaux sommets : Une après-midi concours en lien avec l'INESS dont l'objectif est de proposer de nouvelles surfaces pour exprimer leur Art. Des créatifs de toute la communautée d'agglo laisseront libre cours à leur imagination sur le thème de l'écologie. Classées en plusieurs catégories allant du StreetArt jusqu'au Classicisme  en passant par le Futurisme, les modèles sélectionnés à l'issue du concours pourront être choisis par les particuliers pour personnaliser leurs poubelles de tri sélectif.
 										</p>
 										<button type="button" class="btn btn-default edit-button-2">
 											Inscription
@@ -193,9 +191,9 @@
 						<div class="col-md-12">
 							<div class="block-top">
 								<div class="gallery-area">
-									<h1>Gallerie photo de nôtre projects</h1>
+									<h1>Gallerie photo du notre projet</h1>
 									<p>
-										Voici une gallerie photo de nôtre premier prototype réaliser en 3D avec un logicielle de montage vidéo
+										Voici une gallerie photo de notre premier prototype réalisé en 3D avec un logiciel de montage vidéo
 									</p>
 								</div>
 							</div>
@@ -245,14 +243,22 @@
 							<div class="block-right">
 								<div class="contant-2-text-area">
 									<div class="contant-2-header">
-										<h1>Nos stats Via le formulaire google</h1>
+										<h1>Les résultats de notre sondage</h1>
 									</div>
 									<div class="contant-2-text">
-										<h2>Voici nos stats Voici nos stats.</h2>
-										<p>
-											Voici nos statsVoici nos stats.Voici nos statsVoici nos statsVoici nosVoici nos statsVoici nos statsVoici nos statsVoici nos stats
-											Voici nos statsVoici nos statsVoici nos statsVoici nos stats.
-										</p>
+										<h2>Illustration graphique des résultats</h2>
+										<p>prez image 1</p>
+										<img src="" alt=""/>
+										<p>prez image 2</p>
+										<img src="" alt=""/>
+										<p>prez image 3</p>
+										<img src="" alt=""/>
+										<p>prez image 4</p>
+										<img src="" alt=""/>
+										<p>prez image 5</p>
+										<img src="" alt=""/>
+										<p>prez image 6</p>
+										<img src="" alt=""/>
 										<button type="button" class="btn btn-default edit-button-3">
 											Plus d'info
 										</button>
@@ -273,7 +279,7 @@
 					<div class="col-md-12">
 						<div class="block">
 							<div class="footer-contant">
-								<h3>Pour nous suivre, tout nos réseaux</h3>
+								<h3>Pour nous suivre sur les réseaux sociaux</h3>
 								<div class="social-icon">
 									<a href="#"><i class="fa fa-facebook"></i></a>
 									<a href="#"><i class="fa fa-tumblr"></i></a>
@@ -297,7 +303,7 @@
 				$("#galler").hide();
 				$("#afair").hide();
 				$("#accueill").show("fast");
-		
+
 				$("#accueil").addClass("act");
 				$("#galerie").removeClass("act");
 				$("#evenement").removeClass("act");
@@ -308,7 +314,7 @@
 				$("#galler").hide();
 				$("#afair").hide();
 				$("#evenementt").show("fast");
-		
+
 				$("#accueil").removeClass("act");
 				$("#galerie").removeClass("act");
 				$("#project").removeClass("act");
@@ -320,7 +326,7 @@
 				$("#evenementt").hide();
 				$("#afair").hide();
 				$("#galler").show("fast");
-				
+
 				$("#accueil").removeClass("act");
 				$("#galerie").addClass("act");
 				$("#project").removeClass("act");
@@ -336,7 +342,7 @@
 				$("#galerie").removeClass("act");
 				$("#evenement").removeClass("act");
 				$("#project").addClass("act");
-			}); 
+			});
 		</script>
     </body>
 </html>
